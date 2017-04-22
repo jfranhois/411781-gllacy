@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Глейси каталог</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+     <header>
+        <div class="header-container">
+          <div class="header-top">
+            <div class="main-nav">
+            <a><img class="logo-main" src="" name="logo-main"></a>
+            <nav class="main-nav">
+                <ul class="main-nav">
+                    <li class="main-nav-item" class="active"><a href="">Каталог</a></li>
+                    <ul class="catalog">
+                        <li class="catalog"><a href=""><strong>Новинки</strong></a></li>
+                        <li class="catalog">Сливочное</li>
+                        <li class="catalog">Щербеты</li>
+                        <li class="catalog">Фруктовый лед</li>
+                        <li class="catalog">Мелорин</li>
+                    </ul>
+                    <li class="main-nav-item"><a href="">Доставка и оплата</a></li>
+                    <li class="main-nav-item"><a href="">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="right-header">
+                <div class="search">
+                    <img src="" class="search-pic">
+                    <!-- как прописывать в html выпадающее меню (hover) -->
+                    <input type="submit" name="search" class="hover">
+                </div>
+                <!-- вот это сильно не уверена, что правильно -->
+                <div class="user-login">
+                    <img src="" class="login-img">
+                    <div class="hover login">
+                      <input type="text" name="user-email">
+                      <input type="text" name="user-password">
+                      <input type="submit" name="войти">
+                      <a href="">Забыли пароль</a>
+                      <a href="">Новая регистрация</a>
+                    </div>
+                </div>
+                <div class="basket">
+                <!-- КАК ДЕЛАТЬ КОРЗИНУ? -->
+                    <a href=""><img class="basket-nitems" src=""><span class="count">2 товара</span></a>
+                </div>
+                <div class="phone-numbers">
+                    <span>С 10 до 20, ежедневно</span><br>
+                    <span><strong>8 812 450-25-25</strong></span>
+            </div>
+            </div>
+           </div>
+        </div>
+    </header>
+    <main>
+    	<div class="main-container">
+            <h1>Сливочное мороженое</h1>
+    		    <div class="breadcrumbs">
+    			    <ul class="breadcrumbs">
+    			    	<li class="breadcrumbs"><a href="">Главная</a></li>
+    			    	<li class="breadcrumbs"><a href="">Каталог</a></li>
+    			    	<li class="breadcrumbs"><a href="">Сливочное</a></li>
+    			    </ul>
+    		    </div>
+    		    <form method="get">
+                  <fieldset>
+                      <legend>Сортировка:</legend>
+                        <ul>
+                            <li>по популярности</li>
+                        </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Цена: 100 руб - 500 руб</legend>
+                      <!-- ТУТ что-то странное советуют, без <range> -->
+                  </fieldset>
+                  <fieldset>
+                      <legend>Жирность</legend>
+                      <ul>
+                          <li><input type="radio" value="0%" name="">0%</li>
+                          <li><input type="radio" value="<10%" name="" checked="">до 10%</li>
+                          <li><input type="radio" value="<30%" name="">до 30%</li>
+                          <li><input type="radio" value=">30%" name="">больше 30%</li>
+                      </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Наполнители</legend>
+                      <ul>
+                          <li><input type="checkbox" name="" checked="">шоколадные</li>
+                          <li><input type="checkbox" name="">сахарные присыпки</li>
+                          <li><input type="checkbox" name="">фрукты</li>
+                          <li><input type="checkbox" name="">сиропы</li>
+                          <li><input type="checkbox" name="">джемы</li>
+                      </ul>
+                  </fieldset>
+                  <!-- * 4.4 Фильтр: по нажатию кнопки «Применить» осуществляется отправка формы. -->
+                  <input type="submit" name="Применить">
+                </form>
+                <div class="item-card">
+                  <ul>
+                      <li><img src=""><span class="price">310 р/кг</span><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></li>
+                      <!-- дальше их до бесконечности, я пока не успела -->
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <ul class="pages">
+                    <li><a href="">1</a></li>
+                    <li><a href="" class="active">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                  </ul>
+                </div>
+    	</div> 
+    </main>
+    <footer>
+    <div class="footer">
+    <div class="footer-container">
+        <div class="social-networks">
+            <div class="twitter">
+                <img class="twitter-logo" src="">
+                <a class="twitter" href=""></a>
+            </div>
+            <div class="instagram">
+                <img class="instagram-logo" src="">
+                <a class="instagram" href=""></a>
+            </div>
+                <img class="facebook-logo" src="">
+                <a class="facebook" href=""></a>
+            </div>
+                <img class="vk-logo" src="">
+                <a class="vkontakte" href=""></a>
+            </div>
+            <div class="links-footer">
+                <a class="suppliers" href="" class="suppliers-heart"><img src="" class="heart-img">Для поставщиков</a>
+                <a class="about-production" href="">О производстве</a>
+                <a class="our-documents" href="">Наши документы</a>
+                <a class="eco-standards" href="">Экологические стандарты</a>
+            </div>
+            <div class="developers">
+                <a href=""><img class="developers-logo" src=""></a>
+                <span>Сделано в HTML Academy (c) 2017</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
