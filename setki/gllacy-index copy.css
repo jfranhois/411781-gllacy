@@ -1,0 +1,132 @@
+html,
+body {
+	min-width: 900px; 
+	min-height: 2433px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: 
+	/* тут, кажется, фон верствается вместе со слайдером ??? */
+	background-image: url("Фон.png");
+	background-size: 900px auto;
+}
+
+.clearfix::after {
+	content: "";
+
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 880px; /* как это вообще выбирается? может он у меня быть на всю длину=900? там он большой */
+	margin: 0 auto;
+	padding: 0 10px;
+} 
+
+.header-container {
+	min-height: 120px;
+	margin-bottom: 60px;
+}
+.main-nav-block {
+	min-height: 120px;
+	width: 550px;
+	float: left;
+
+}
+
+/* что делать с блоками внутри? */
+.main-nav-block .logo-main {
+	width: 170px;
+	float: left;
+}
+
+.main-nav-block .main-nav {
+	width: 365px;
+	float: right;
+}
+/* end of comment */
+ 
+.user-block {
+	min-height: 120px;
+	width: 275px;
+	float: right;
+
+}
+
+/* что делать со слайдером - я не знаю, в PS весь слайдер лежит в папке Фон. */
+
+.banners {
+	width: 880px;
+	height: 240px;
+	margin-bottom: 25px;
+}
+
+.banner {
+	float: left;
+	width: 425px;
+	margin-right: 20px;
+}
+
+.hit {
+	width: 880px;
+	margin-bottom: 25px;
+}
+
+.hits {
+	width: 215px;
+	height: 290px;
+	float: left;
+}
+
+.about-frontpage {
+	height: 380px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.blog-and-mailing {
+	height: 230px;
+	margin: 25px;
+}
+
+.blog-and-mailing-item {
+	width: 425px;
+	float: left;
+}
+
+.map-front {
+	height: 140px;
+	padding: no;
+}
+
+.address-top-map {
+	float: right;
+	height: 308px;
+	width: 304px;
+}
+
+.main-footer {
+	margin-top: 5px;
+	padding: 15px;
+}
+
+.social-networks {
+	width: 200px;
+	height: 65px;
+	float: left;
+}
+
+.links-footer {
+	width: 265px;
+	height: 65px;
+	float: left; 
+}
+
+.developers {
+	height: 65px;
+	width: 205px;
+	float: right;
+}
