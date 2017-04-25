@@ -4,190 +4,211 @@
 	<title>Gllacy Shop</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="gllacy-index.css">
 </head>
 <body>
-    <header>
-    	<div class="header-container">
-    	  <div class="header-top">?????
-    	  <div class="logo-top">
-    		<img class="logo-main" src="" name="logo-main">
-    		</div>
-    		<nav class="main-nav">
+    <header  class="header-container">
+    	<div class="container clearfix">
+    	    <div class="main-nav-block">
+    		<a><img class="logo-main" src="" name="logo-main"></a>
+    		<nav class="main-nav clearfix">
     			<ul class="main-nav">
     				<li class="main-nav-item"><a href="">Каталог</a></li>
+    				<ul class="catalog pop-down">
+    					<li class="catalog"><a href=""><strong>Новинки</strong></a></li>
+    					<li class="catalog">Сливочное</li>
+    					<li class="catalog">Щербеты</li>
+    					<li class="catalog">Фруктовый лед</li>
+    					<li class="catalog">Мелорин</li>
+    				</ul>
     				<li class="main-nav-item"><a href="">Доставка и оплата</a></li>
     				<li class="main-nav-item"><a href="">О компании</a></li>
     			</ul>
     		</nav>
-    		<div class="right-header">
+    		<div class="user-block">
     		    <div class="search">
-    		        <input type="submit" name="search">
+    		        <img src="" class="search-pic">
+    		        <!-- как прописывать в html выпадающее меню (hover) -->
+    		        <input type="submit" name="search" class="hover">
     		    </div>
+    		    <!-- вот это сильно не уверена, что правильно -->
     		    <div class="user-login">
     			    <img src="" class="login-img">
-    			    <a href="">Вход</a>
+    			    <div class="hover login pop-down">
+    			      <input type="text" name="user-email">
+    			      <input type="text" name="user-password">
+    			      <input type="submit" name="войти">
+    			      <a href="">Забыли пароль</a>
+    			      <a href="">Новая регистрация</a>
+    			    </div>
     		    </div>
-    		    <div class="carello">
-    			    <img src="">
-    			    <a href=""></a>
+    		    <div class="basket">
+    		    <!-- КАК ДЕЛАТЬ КОРЗИНУ? -->
+    			    <a href=""><img class="empty-basket" src="">Пусто</a>
+    			    <a href=""><img class="basket-nitems" src=""><span class="count">2 товара</span></a>
+    			    <div class="hover basket-content pop-down">
+    			    	<ul class="hover basket-list">
+    			    		<li class="hover basket-list"><img src="" class="item-orange-pic"><span class="item-orange-name">Пломбир с апельсиновым джемом</span><span class="price-calculation">1,5 кг x 200 руб</span><span class="actual-price">300рублей</span></li>
+    			    		<li class="hover basket-list"><img src="" class="item-strawberrywhitechoc-pic"><span class="item-strawberrywhitechoc-name">Клубничный пломбир с присыпкой из белого шоколада</span><span class="price-calculation">1,5 кг x 300 руб</span><span class="actual-price">4500рублей</span></li>
+    			    		<li class="final-price">Итого:<span class="count-final-price">750 руб</span></li>
+    			    	</ul>
+    			    	<a href="" class="finalise-order">Оформить заказ</a>
+    			    </div>
     		    </div>
     		    <div class="phone-numbers">
     			    <span>С 10 до 20, ежедневно</span><br>
-    			    <span><h3>8 812 450-25-25</h3></span>
+    			    <span><strong>8 812 450-25-25</strong></span>
     		</div>
     		</div>
            </div>
     	</div>
     </header>
-    <main>
-    <div class="main-ground">
-    <!-- СЛАЙДЕР! -->
-    <div class="slider-frontpage">
-    	<input type="radio" name="slider" id="slider-1" checked>
+    <main class="container">
+    <!-- СЛАЙДЕР! 
+    ?????????
+
+  * 4.1 Карусель под шапкой страницы: оживление слайдера. Cмена слайдов мгновенная, без промежуточных переходов. При смене слайдов происходит смена фонового цвета на всей странице (смотрите папку слоёв «Фон» в `gllacy-index.psd`).-->
+    <section class="slider-frontpage">
+      <ul class="slider-frontpage">
+    	<li class="slide1"><input type="radio" name="slider" id="slider-1" checked>
     	<label for="slider-1"></label>
-    	<div><img src=""><a href=""></a></div>
+    	<img src="" class="background1">
+    	<a href="">Давайте оба!</a></li>
 
-    	<input type="radio" name="slider" id="slider-2">
+    	<li class="slide2"><input type="radio" name="slider" id="slider-2">
     	<label for="slider-2"></label>
-    	<div><img src=""></div>
+    	<img src="" class="background2">
+    	<a href="">Давайте оба!</a></li>
 
-    	<input type="radio" name="slider" id="slider-3">
+    	<li class="slide3"><input type="radio" name="slider" id="slider-3">
     	<label for="slider-3"></label>
-    	<div><img src=""></div>
-    </div>
+    	<img src="">
+    	<a href="">Давайте оба!</a></li>
+      </ul>
+    </section>
     <!-- END OF SLIDER -->
-    <div class="banners">
-    	<div class="left-banner">
-    		<div class="left-banner-container">
-    			<img src="">
-    			<div class="left-banner-text">
-    				<h2>Малинка даром!</h2>
-    				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-    			</div>
-    			<div class="buy-banner">
-    				<img src="">
-    				<a href="">Хочу варенье!</a>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="right-bannner">
-    		<img src="">
-    			<div class="right-bannner-text">
-    				<h2>Шоколадки даром!</h2>
-    				<p>При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-    			</div>
-    			<div class="buy-banner">
-    				<img src="">
-    				<a href="">Хочу шоколадки!</a>
-    			</div>
-    	</div>
+    <section class="banners clearfix">
+    	<section class="banner">
+    			<img src="" class="banner1-background">
+    			<b>Малинка даром!</b>
+    			<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    			<a href="">Хочу варенье!</a>
+    	</section>
+    	<section class="bannner">
+    		<img src="" class="bannner2-background">
+    		<b>Шоколадки даром!</b>
+    		<p>При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    		<a href="">Хочу шоколадки!</a>
+    	</section>
+    </section>
     	
-    	<div class="hits">
-    		<div class="hit-1">
+    	<section class="hits clearfix">
+    		<div class="hit">
     		    <img class="hit-logo" src="" name="hit-logo">
     		    <img class="hit-image" src="" name="hit-image">
     		    <span class="price-item">310 р/кг</span>
-    		    <span class="item-short-description">Сливочное с аперльсиновым джемом и цитрусовой стружкой</span>
+    		    <a href=""><span class="item-short-description">Сливочное с аперльсиновым джемом и цитрусовой стружкой</span></a>
     		</div>
-    		<div class="hit-2">
+    		<div class="hit">
     			<img class="hit-logo" src="" name="hit-logo">
     		    <img class="hit-image" src="" name="hit-image">
     		    <span class="price-item">380 р/кг</span>
-    		    <span class="item-short-description">Сливочно-кофейное с кусочками шоколада</span>
+    		    <a href=""><span class="item-short-description">Сливочно-кофейное с кусочками шоколада</span></a>
     		</div>
-    		<div class="hit-3">
+    		<div class="hit">
     			<img class="hit-logo" src="" name="hit-logo">
     		    <img class="hit-image" src="" name="hit-image">
     		    <span class="price-item">355 р/кг</span>
-    		    <span class="item-short-description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+    		    <a href=""><span class="item-short-description">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
     		</div>
-    		<div class="hit-4">
+    		<div class="hit">
     			<img class="hit-logo" src="" name="hit-logo">
     		    <img class="hit-image" src="" name="hit-image">
     		    <span class="price-item">415 р/кг</span>
-    		    <span class="item-short-description">Сливочное крем-брюле с карамельное подливкой</span>
+    		    <a href=""><span class="item-short-description">Сливочное крем-брюле с карамельное подливкой</span></a>
     		</div>
-    	</div>
-    	<div class="seo-frontpage">
-    		<div class="seo-ground">
-    		<img class="seo-ground" src="" name="seo-ground">
-    		<article class="seo-ground-text">
+    	</section>
+
+    	<section class="about-frontpage">
+    		<img class="about-ground" src="" name="about-ground">
+    		<article class="about-frontpage-text">
     			<h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
     			<section>
-    				<img class="seo-img" src="">
+    				<img class="icecream-img" src="">
     				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
     			</section>
     			<section>
-    			    <img class="seo-img" src="">
+    			    <img class="leave-img" src="">
     			    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
     			</section>
     			<section>
-    				<img class="seo-img" src="">
+    				<img class="cow-img" src="">
     				<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
     			</section>
     			<section>
-    				<img class="seo-img" src="">
+    				<img class="temperature-img" src="">
     				<p>Доставка нашего мороженго до заказчиков осщуествляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
     			</section>
     		</article>
-    		</div>
-    		<div class="blog-n-mailing-list">
-    			<div class="blog">
-    				<img class="blog-ground" src="">
+    	  </div>
+    	</section>
+
+    	<section class="blog-and-mailing clearfix">
+    			<div class="blog blog-and-mailing-item">
+    				<img class="blog-background" src="">
     				<span>Новое в нашем блоге</span>>
     				<a href=""><span class="blog-new">10 способов сервировки фруктовых щербетов к столу</span></a>
     			</div>
-    			<div class="mailing-list">
+    			<div class="mailing-list blog-and-mailing-item">
     				<img class="mailing-ground" src="">
     				<p class="mailing-front-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    				<input type="submit" name="subscribe"> 
-    				<!-- ????? КАК ЭТО ДЕЛАТЬ -->
+    				<!-- ????? КАК  делается эта форма? -->
+    				<form class="form-subscribe" method="post" action="subscribe">
+    					<input class="subscribe-input" type="email" placeholder="Электронная почта" name="email">
+    					<button class="btn" type="submit">Отправить</button>
+    				</form>
+    				<!-- end -->
     			</div>
-    			<div class="map-front">
+    	</section>
+
+    	<section class="map-front">
     				<div class="map">
     					<img class="map" src="" name="map">
     					<a href=""></a>
     				</div>
     				<div class="adress-top-map">
-    					<img class="adress-top-map" src="">
+    					<img class="adress-top-map-container" src="">
     					<span>Адрес главного офиса и офлайн магазина:<br><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></span>
     					<span>Для заказов по телефону:<strong>8 812 450-25-25</strong><br>с 10 до 20 ежедневно</span>
-    					<input type="submit" name="Форма обратной связи">
+    					<a href="">Форма обратной связи</a>>
     				</div>
-    			</div>
-    		</div>
-    	</div>
-   
-   </div>
-   </div>
+    	</section>
 </main>
-<footer>
-	<div class="footer-container">
+<footer class="main-footer">
+	<div class="container clearfix">
 		<div class="social-networks">
 			<div class="twitter">
-				<img class="twitter-logo" src="">
-				<a class="twitter" href=""></a>
+				<img class="twitter-logo" src="#">
+				<a class="twitter" href="#">t</a>
 			</div>
 			<div class="instagram">
-				<img class="instagram-logo" src="">
-				<a class="instagram" href=""></a>
+				<img class="instagram-logo" src="#">
+				<a class="instagram" href="">i</a>
 			</div>
-				<img class="facebook-logo" src="">
-				<a class="facebook" href=""></a>
+				<img class="facebook-logo" src="#">
+				<a class="facebook" href="#">fb</a>
 			</div>
-				<img class="vk-logo" src="">
-				<a class="vkontakte" href=""></a>
-			</div>
-			<dir class="links-footer">
-				<a class="suppliers" href="">Для поставщиков</a>
+				<img class="vk-logo" src="#">
+				<a class="vkontakte" href="#">vk</a>
+		</div>
+			<div class="links-footer">
+				<a class="suppliers" href="" class="suppliers-heart"><img src="" class="heart-img">Для поставщиков</a>
 				<a class="about-production" href="">О производстве</a>
 				<a class="our-documents" href="">Наши документы</a>
 				<a class="eco-standards" href="">Экологические стандарты</a>
-			</dir>
+			</div>
 			<div class="developers">
-				<a href="">
-				<img class="developers-logo" src=""
-				</a>
+				<a href=""><img class="developers-logo" src=""></a>
 				<span>Сделано в HTML Academy (c) 2017</span>
 			</div>
 		</div>

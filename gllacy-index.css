@@ -20,22 +20,20 @@ body {
 	clear: both;
 }
 
-.header-container {
-	width: 900px;
-	min-height: 120px;
-	margin-bottom: 60px;
-}
-
 .container {
 	width: 880px; /* как это вообще выбирается? может он у меня быть на всю длину=900? там он большой */
 	margin: 0 auto;
 	padding: 0 10px;
 } 
+
+.header-container {
+	min-height: 120px;
+	margin-bottom: 60px;
+}
 .main-nav-block {
 	min-height: 120px;
 	width: 550px;
 	float: left;
-	margin-right: 10px;
 
 }
 
@@ -43,13 +41,11 @@ body {
 .main-nav-block .logo-main {
 	width: 170px;
 	float: left;
-	margin-right: 10px;
 }
 
 .main-nav-block .main-nav {
-	width: 350px;
+	width: 365px;
 	float: right;
-	margin-right: 10px;
 }
 /* end of comment */
  
@@ -57,33 +53,8 @@ body {
 	min-height: 120px;
 	width: 275px;
 	float: right;
-	margin-right: 10px;
 
 }
-
-/* блоки в .user-block */
-.search {
-	width: 45px;
-	float: left;
-	margin-right: 5px;
-}
-
-.user-login {
-	width: 95px;
-	float: left;
-	margin-right: 5px;
-}
-
-.basket {
-	width: 122px;
-	float: right;
-	margin-left: 5px; 
-}
-
-.pop-down {
-	display: none;
-}
-/* DISPLAN: NONE не работает, почему -- не понимаю */
 
 /* что делать со слайдером - я не знаю, в PS весь слайдер лежит в папке Фон. */
 
@@ -99,13 +70,12 @@ body {
 	margin-right: 20px;
 }
 
-.hits {
+.hit {
 	width: 880px;
-	height: 290px;
 	margin-bottom: 25px;
 }
 
-.hit {
+.hits {
 	width: 215px;
 	height: 290px;
 	float: left;
@@ -113,19 +83,18 @@ body {
 
 .about-frontpage {
 	height: 380px;
+	margin: 0 auto;
 	margin-bottom: 25px;
 }
 
 .blog-and-mailing {
 	height: 230px;
-	margin-bottom: 25px;
-
+	margin: 25px;
 }
 
 .blog-and-mailing-item {
 	width: 425px;
 	float: left;
-	margin-right: 10px;
 }
 
 .map-front {
